@@ -58,7 +58,12 @@ const timer=new Timer(durationInput,startButton,pauseButton,{
 
     },
     onTick(timeRemaining){
-        console.log('timer ticked down');
+        
+        console.log('timer ticked down', timeRemaining);
+        // a little trick to play tick sound at one second gap. played only when timeremaing does not contain '.' .
+        if(!timeRemaining.toString().includes('.')){
+            getEl('#tick').play();
+        }
         let strokeOffset=perimeter*timeRemaining/duration-perimeter;
         timerCircle.setAttribute('stroke-dashoffset',strokeOffset);
     },
