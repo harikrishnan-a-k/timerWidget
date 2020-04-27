@@ -29,9 +29,9 @@ function circleResize(){
 }
 circleResize();
 // run this function at each window resize
-window.addEventListener('resize',()=>{
-    window.location.reload();
-});
+// window.addEventListener('resize',()=>{
+//     window.location.reload();
+// });
 
 
 const durationInput=getEl('#durationInput');
