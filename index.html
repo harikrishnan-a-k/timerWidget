@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer Widget</title>
+</head>
+<body>
+    <div class="timer">
+        <div class="controls">
+            <input id="durationInput" type="text" value="30">
+            <div>
+                <button id="startButton" ><i class="fas fa-play"></i></button>
+                <button id="pauseButton"><i class="fas fa-pause"></i></button>
+            </div>
+        </div>
+
+        <svg class="dial" >
+            <circle id="timerCircle" r="140"
+             cx="150"
+              cy="150"
+               fill="transparent"
+                stroke="green"
+                stroke-width="15"
+                
+                
+                transform="rotate(-90 150 150)"></circle>
+        </svg>
+            
+    </div>
+    
+
+   
+    
+
+
+
+
+<audio id="timeOver" src="timeOver.mp3"></audio>
+
+    <!--  script for alert box -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    
+    
+    <script src="timer.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
